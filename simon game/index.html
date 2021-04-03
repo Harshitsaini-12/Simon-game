@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="icon container" href="data:image/png;base64,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">
+</head>
+
+<body>
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container">
+    <div class="row">
+
+      <div type="button" id="green" class="btn green">
+
+      </div>
+
+      <div type="button" id="red" class="btn red">
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div type="button" id="yellow" class="btn yellow">
+
+      </div>
+      <div type="button" id="blue" class="btn blue">
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="./index.js"></script>
+</body>
+
+</html>
